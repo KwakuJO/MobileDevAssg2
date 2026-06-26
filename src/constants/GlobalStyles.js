@@ -1,10 +1,16 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    bgDarkGray: { backgroundColor: "rgb(20, 20, 20)" },
-    bgGray: { backgroundColor: "rgb(80, 80, 80)", color: "rgb(220, 220, 220)" },
+    bgDarkGray: { backgroundColor: "rgb(10, 10, 10)" },
+    bgGray: { backgroundColor: "rgb(70, 70, 70)", color: "rgb(220, 220, 220)" },
     bgGreen: { backgroundColor: "rgb(20, 210, 20)", color: "black" },
+    
     bgBrown: { backgroundColor: "brown" },
+    bgStrongPink: { backgroundColor: "rgb(235, 82, 158)" },
+    bgTealGreen: { backgroundColor: "rgb(64, 133, 64)" },
+    bgDarkBlue: { backgroundColor: "rgb(42, 42, 199)" },
+    bgPurple: { backgroundColor: "purple" },
+
 
     textGray: { color: "rgb(200, 200, 200)" },
     textWhite: { color: "rgb(240, 240, 240)" },
@@ -12,6 +18,7 @@ export default StyleSheet.create({
     bold: { fontWeight: "700" },
     size11: { fontSize: 11 },
     size13: { fontSize: 13 },
+    size14: { fontSize: 14 },
     size16: { fontSize: 16 },
     size20: { fontSize: 20 },
 
@@ -72,11 +79,15 @@ export default StyleSheet.create({
     w20: { width: "20%" },
     w25: { width: "25%" }, 
     w36: { width: "36%" },
+    w38: { width: "38%" },
+    w42: { width: "42%" },
     w47: { width: "47%" },
     w48: { width: "48%" },
     w49: { width: "49%" },
     w50: { width: "50%" },
+    w75: { width: "75%" },
     w85: { width: "85%" },
+    w92: { width: "92%" },
     w95: { width: "95%" },
     wFull: { width: "100%" },
 

@@ -62,39 +62,39 @@ export default function Index() {
           preStyles.pb5 
           ]}>
 
+          <RecentlyViewedListCard title="SOMEBODY PRAYED" />
+          <RecentlyViewedListCard title="Top Christian & Gospel" />
           <RecentlyViewedListCard title="Chansons aimées" />
           <RecentlyViewedListCard title="Lords Bop" />
           <RecentlyViewedListCard title="Christ" />
           <RecentlyViewedListCard title="Bass in the Line" />
           <RecentlyViewedListCard title="R + A" />
           <RecentlyViewedListCard title="Sondae" />
-          <RecentlyViewedListCard title="s" />
-          <RecentlyViewedListCard title="s" />
         </View>
         {/* Below is the AI for spotify to find new lists */}
         <SpotifyAIComponent />
 
         {/* Below is the recommended radio stations / new releases */}
-        <UpcomingReleasesCard from="Housefires" album="House Church Vol. 001" />
+        <UpcomingReleasesCard from="LIN D" album="Messed Up Messenger" />
         
         {/* Below is the stuff that you previously listened to */}
-        <View style={[preStyles.h35, preStyles.wFull]}>
+        <View style={[ preStyles.h35, preStyles.wFull ]}>
           <Text style={[ preStyles.textWhite, preStyles.bold, preStyles.size16 ]}>Nouveautés personnelles</Text>
           <ScrollView horizontal={true} contentContainerStyle= {[preStyles.gap2, preStyles.wFull, preStyles.bgDarkGray]}>
-          <MediaListCard />
-          <MediaListCard />
-          <MediaListCard />
-          <MediaListCard />
+          <MediaListCard title="Song Name" artist="Artist"/>
+          <MediaListCard title="Song Name" artist="Artist"/>
+          <MediaListCard title="Song Name" artist="Artist"/>
+          <MediaListCard title="Song Name" artist="Artist"/>
           </ScrollView>
         </View>
         {/* Below is Just stuffing */}
-        <View style={[preStyles.h35, preStyles.wFull]}>
+        <View style={[ preStyles.h35, preStyles.wFull ]}>
           <Text style={[ preStyles.textWhite, preStyles.bold, preStyles.size16 ]}>Nouveautés personnelles</Text>
-          <ScrollView horizontal={true} contentContainerStyle= {[preStyles.gap2, preStyles.wFull, preStyles.bgDarkGray]}>
-          <MediaListCard />
-          <MediaListCard />
-          <MediaListCard />
-          <MediaListCard />
+          <ScrollView horizontal={true} contentContainerStyle={[preStyles.gap2, preStyles.wFull, preStyles.bgDarkGray]}>
+          <MediaListCard title="Song Name" artist="Artist"/>
+          <MediaListCard title="Song Name" artist="Artist"/>
+          <MediaListCard title="Song Name" artist="Artist"/>
+          <MediaListCard title="Song Name" artist="Artist"/>
           </ScrollView>
         </View>
       </ScrollView>

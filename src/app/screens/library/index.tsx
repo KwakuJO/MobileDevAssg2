@@ -3,42 +3,115 @@ import preStyles from "@/constants/GlobalStyles";
 import { Image, Pressable, ScrollView, Text, View } from "react-native";
 
 export default function Library() {
-    return(
-        <View style={[ preStyles.hFull, preStyles.bgDarkGray ]}>
-            <View style={[ preStyles.flCol, preStyles.wFull, preStyles.p5]}>
-                <View>
-                    <Text style={[ preStyles.textWhite, preStyles.bold, preStyles.size16 ]}>Bibliothèque</Text>
-                </View>
-                <View style={[ preStyles.flRow, preStyles.gap2 ]}>
-                    <Image />
-                    <Pressable>
-                        <Text style={[ preStyles.bgGray, preStyles.rounded20, preStyles.p5, preStyles.pl10, preStyles.pr10 ]}>Listes de lecture</Text>
-                    </Pressable>
-                    <Pressable>
-                        <Text style={[ preStyles.bgGray, preStyles.rounded20, preStyles.p5, preStyles.pl10, preStyles.pr10 ]}>Albums</Text>
-                    </Pressable>
-                    <Pressable>
-                        <Text style={[ preStyles.bgGray, preStyles.rounded20, preStyles.p5, preStyles.pl10, preStyles.pr10 ]}>Artistes</Text>
-                    </Pressable>
-                </View>
-            </View>
-            <ScrollView contentContainerStyle={[ preStyles.flCol, preStyles.itemsCenter, preStyles.gap1, preStyles.hFull]}>
-                <View style={[ preStyles.wFull, preStyles.p5 ]}>
-                    <Text style= { preStyles.textWhite}>Récents</Text>
-                </View>
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-                <LibraryMediaListCard />
-            </ScrollView>
+  return (
+    <View style={[preStyles.hFull, preStyles.bgDarkGray, preStyles.p10]}>
+      <View style={[preStyles.flCol, preStyles.wFull, preStyles.p5]}>
+        <View
+          style={[
+            preStyles.flRow,
+            preStyles.itemsCenter,
+            preStyles.p5,
+            preStyles.gap2,
+            preStyles.pb10,
+          ]}
+        >
+          <View style={[preStyles.w9, preStyles.aspect1]}>
+            <Image
+              style={[preStyles.hFull, preStyles.wFull, preStyles.rounded50]}
+              source={require("@/assets/images/icon.png")}
+            />
+          </View>
+          <Text style={[preStyles.textWhite, preStyles.bold, preStyles.size16]}>
+            Bibliothèque
+          </Text>
         </View>
-    );
+        <View style={[preStyles.flRow, preStyles.gap2, preStyles.p5]}>
+          <Pressable style={[preStyles.hFull, preStyles.aspect1]}>
+            <Image
+              style={[preStyles.hFull, preStyles.wFull, preStyles.rounded50]}
+              source={require("@/assets/images/icon.png")}
+            />
+          </Pressable>
+          <Pressable>
+            <Text
+              style={[
+                preStyles.bgGray,
+                preStyles.rounded20,
+                preStyles.p5,
+                preStyles.pl10,
+                preStyles.pr10,
+              ]}
+            >
+              Listes de lecture
+            </Text>
+          </Pressable>
+          <Pressable>
+            <Text
+              style={[
+                preStyles.bgGray,
+                preStyles.rounded20,
+                preStyles.p5,
+                preStyles.pl10,
+                preStyles.pr10,
+              ]}
+            >
+              Albums
+            </Text>
+          </Pressable>
+          <Pressable>
+            <Text
+              style={[
+                preStyles.bgGray,
+                preStyles.rounded20,
+                preStyles.p5,
+                preStyles.pl10,
+                preStyles.pr10,
+              ]}
+            >
+              Artistes
+            </Text>
+          </Pressable>
+        </View>
+      </View>
+      <ScrollView
+        contentContainerStyle={[
+          preStyles.flCol,
+          preStyles.itemsCenter,
+          preStyles.gap2,
+          preStyles.hFull,
+          preStyles.p5,
+        ]}
+      >
+        <View style={[preStyles.wFull, preStyles.pl5]}>
+          <Text style={preStyles.textWhite}>Récents</Text>
+        </View>
+        <LibraryMediaListCard
+          title="Chansons aimées"
+          from="Liste de lecture • Kwaks"
+        />
+        <LibraryMediaListCard
+          title="Lords Bop"
+          from="Liste de lecture • Kwaks"
+        />
+        <LibraryMediaListCard title="Christ" from="Liste de lecture • Kwaks" />
+        <LibraryMediaListCard
+          title="Bass in the Line"
+          from="Liste de lecture • Kwaks"
+        />
+        <LibraryMediaListCard
+          title="R + A"
+          from="Liste de lecture • Lielt Tessema"
+        />
+        <LibraryMediaListCard title="Sondae" from="Artiste" />
+        <LibraryMediaListCard
+          title="Jesus Be The Name"
+          from="Simple • Elevation Worship"
+        />
+        <LibraryMediaListCard
+          title="Another Playlist"
+          from="Liste de lecture • Egya"
+        />
+      </ScrollView>
+    </View>
+  );
 }

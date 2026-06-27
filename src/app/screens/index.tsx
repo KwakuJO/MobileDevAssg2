@@ -133,12 +133,12 @@ export default function Index() {
         {/* Below is the stuff that you previously listened to */}
         <View style={[preStyles.h35, preStyles.wFull]}>
           <Text style={[preStyles.textWhite, preStyles.bold, preStyles.size16]}>
-            Nouveautés personnelles
+            C'est la Nouvelle musique du vendredi!
           </Text>
           <ScrollView
             horizontal={true}
             contentContainerStyle={[
-              preStyles.gap2,
+              preStyles.gap4,
               preStyles.wFull,
               preStyles.bgDarkGray,
             ]}
@@ -157,7 +157,7 @@ export default function Index() {
           <ScrollView
             horizontal={true}
             contentContainerStyle={[
-              preStyles.gap2,
+              preStyles.gap4,
               preStyles.wFull,
               preStyles.bgDarkGray,
             ]}

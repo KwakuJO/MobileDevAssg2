@@ -12,13 +12,13 @@ export default function LibraryMediaListCard({
     <View
       style={[
         preStyles.h9,
-        preStyles.w95,
+        preStyles.wFull,
         preStyles.rounded10,
         preStyles.flRow,
         preStyles.itemsCenter,
       ]}
     >
-      <View style={[preStyles.hFull, preStyles.w20, preStyles.aspect1]}>
+      <View style={[preStyles.hFull, preStyles.aspect1]}>
         <Image
           resizeMode="contain"
           style={[preStyles.wFull, preStyles.hFull]}

@@ -5,14 +5,14 @@ import { Image, Pressable, ScrollView, Text, View } from "react-native";
 export default function Library() {
   return (
     <View style={[preStyles.hFull, preStyles.bgDarkGray, preStyles.p10]}>
-      <View style={[preStyles.flCol, preStyles.wFull, preStyles.p5]}>
+      <View style={[preStyles.h12, preStyles.wFull]}>
         <View
           style={[
             preStyles.flRow,
             preStyles.itemsCenter,
-            preStyles.p5,
             preStyles.gap2,
-            preStyles.pb10,
+            preStyles.p10,
+            preStyles.pl0,
           ]}
         >
           <View style={[preStyles.w9, preStyles.aspect1]}>
@@ -21,7 +21,7 @@ export default function Library() {
               source={require("@/assets/images/icon.png")}
             />
           </View>
-          <Text style={[preStyles.textWhite, preStyles.bold, preStyles.size16]}>
+          <Text style={[preStyles.textWhite, preStyles.bold, preStyles.size20]}>
             Bibliothèque
           </Text>
         </View>
@@ -82,7 +82,7 @@ export default function Library() {
           preStyles.p5,
         ]}
       >
-        <View style={[preStyles.wFull, preStyles.pl5]}>
+        <View style={[preStyles.wFull]}>
           <Text style={preStyles.textWhite}>Récents</Text>
         </View>
         <LibraryMediaListCard
